@@ -1,19 +1,19 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.5.0.schema.json
+# Created using wingetcreate 1.9.4.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
 
 PackageIdentifier: Microsoft.VisualStudioCode.Insiders.CLI
 PackageVersion: 1.99.0
-Commands: []
 InstallerType: zip
-Installers:
-  - Architecture: arm64
-    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/3ea047c09e86b75b33ea8c84a351efd7d3899558/vscode_cli_win32_arm64_cli.zip'
-    InstallerSha256: 624e3cddd1134785fbc8b782c07aaf2283c9d27f5d0bda50130e6420f910a71f
-  - Architecture: x64
-    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/3ea047c09e86b75b33ea8c84a351efd7d3899558/vscode_cli_win32_x64_cli.zip'
-    InstallerSha256: 14b9d14a56cff1964a6d1c95017b2c20a3b57ef4f7d366df4e50b68686e9e12c
-ManifestType: installer
-ManifestVersion: 1.5.0
 NestedInstallerType: portable
 NestedInstallerFiles:
-  - RelativeFilePath: ./code-insiders.exe
-    PortableCommandAlias: code-insiders
+- RelativeFilePath: ./code-insiders.exe
+  PortableCommandAlias: code-insiders
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/insider/2c7a0283817355c81e1b106f34d911762950a4d9/vscode_cli_win32_arm64_cli.zip
+  InstallerSha256: 3A912000FF19CA5F76C2D596CC6F26134E80CD60F4FC51C8666F460B5AC38E8B
+- Architecture: x64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/insider/2c7a0283817355c81e1b106f34d911762950a4d9/vscode_cli_win32_x64_cli.zip
+  InstallerSha256: C4EAEC0E0BF8954450C757407484A21AE72131A53C552A8898BAC766F36153E6
+ManifestType: installer
+ManifestVersion: 1.9.0
